@@ -1,0 +1,23 @@
+GIT
+
+Username - karthikeyan-gk
+Password - Kar@1992
+
+GIT COMMANDS
+
+To download the project from the Git server repo to local follow the below steps
+ Right Click from the local folder -> Git Bash here ... -> this will launch the cmd prompt.
+  Type the below command which will download the project from the server repository
+  Syntax - git clone server project url
+  Exampl - git clone https://github.com/karthikeyan-gk/ProcessAutomation
+---- The above will download the project folder that is available in the repo url given above
+
+  
+To place the project folder from our local machine to the Git Server repo follow the below steps
+ Go inside the project folder in out local machine
+ Right click from the local project folder -> Git GUI here .... -> this will launch the GIT GUI
+ Click on Stage Changed
+ Click on Sign Off
+ Click on Commit
+ Click on Push
+ Select the branch in which you want to push the project. By default we can use Master branch to push our project

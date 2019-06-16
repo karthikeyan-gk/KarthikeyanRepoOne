@@ -1,0 +1,4 @@
+03/06/2018 17:30:55 devpinoyLogger OpenBrowser
+03/06/2018 17:30:55 devpinoyLogger Enter Username
+03/06/2018 17:30:55 devpinoyLogger Enter Password
+03/06/2018 17:30:55 devpinoyLogger New One

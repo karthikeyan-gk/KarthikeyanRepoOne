@@ -1,0 +1,9 @@
+1.What is the best practice in Java ?
+      There should not be any data hardcode.
+      Avoid using System Out Print Ln as they consume more memory.
+      Program should have proper exception handling mechanism.
+      Choose the datatype based on the requirement. Dont use always INT.
+      There should be separate development envrionement and separate execution environment.
+      Always use camelcase while declaring methods and variables
+      Variables and methods should be readable
+      All the programs should be in proper package.

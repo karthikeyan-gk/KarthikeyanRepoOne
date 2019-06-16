@@ -1,0 +1,186 @@
+
+To format the typed text in the proper alignment - press ctrl+shift+f
+
+Non Static Global Variable. Non Static variable can also be called as Instance variable. All the Non Static Global variables can also be called as Instance Variable
+All the Non Static functions are also called as Instance Functions.
+A non static function/method accepts both static and non static functions and global variables.
+
+All the Static Functions are also called as Class Functions.
+Static Global Variable. Static Global variable can also be called as Class variable.
+A static function/method accepts only another static function or static global variable.
+
+
+************Jenkins Usage
+
+Login to Jenkins -> New Item  - > Give the Name in Enter an Item name text box similar to project name (Camel Case)
+and click ok
+and Logout and Login
+
+From Dashboard - > Select the project name - > in the left pane -> click Configure
+and in Build Pane 
+
+***HANDLING EXCEPTIONS
+----------------------
+
+Exception is nothing but an unexpected error. Whenever we violate the rules of Java we will get the exceptions.
+Exception will stop the execution of the program at the point where the exception occurs.
+To run the program end to end without stopping the execution even if the exception occurs, we need to handle the exception. Java provides the best exception handling
+mechanism.
+Exception is a inbuild class in java. Exception is a keyword. We need to write a script in such a way that eventhough exception occurs our program should run 
+continuosuly.
+By default any methods in java will not support exception handling. So we need to create a separate block within that method to handle the exception, that block is 
+called Try Catch block.
+
+
+3 types of exceptions - Run time exception(Unchecked Exception), User Defined Exception and compile time exception (Checked Exception)
+
+RUN TIME EXCEPTION - Arithmetic Exception, Array Index Out Of Bound Exception, String Index Out of Boundary Exception, Null Pointer Exception, Number Format Exception, Input Mismatch Exception
+COMPILE TIME EXCEPTION - FileNotFound Exception, Interrupted Exception, SQL Exception
+
+
+Throwable will handle both error and exception.
+Throws will handle compile time exception
+Throw will handle user defined exception
+Throws keyword will just throw the exception and it will not handle the exception to continue the execution. Try Catch block is a best way to handle the exception in Java.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Syntax - for each
+
+for(int c:x)
+{
+SOS
+}
+
+
+__________________________________________________________________________________________________________________________________________________________________________
+
+This Keyword
+
+this keyword is used to instruct java that the variable which is used in the left side is a global variable. 
+For ex, if a class has a global variable and that constructor of that class has the same variable as its local variable, then we use this keyword to specify which is a global variable.
+
+Ex program
+public class HandlingThisKeyword {
+
+	int i,j;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public HandlingThisKeyword(int i, int j)
+	{
+		this.i=i;  //this keyword is used to tell java that i which is used in the left is a global variable
+		this.j=j;
+		
+	}
+
+}
+
+
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+*********** TEST NG
+
+Test NG is similar to Test NG.. TEST NG is a unit testing tool for Java. Test NG is a testing template. 
+
+It is used to test the application unit by unit. Test NG is used to test the entire application by
+splitting into multiple components. Test NG is  a open source testing framework. Using Test NG we can perform verification and validation for each
+and every units or test cases. Test NG is nothing but a framework controlling entity. Test NG will provide a presentable report at the end of the execution.
+
+There will not be any main methods inside Test NG template. All the methods will be controlled through annotations. There will not be any static methods 
+in Test NG. 
+
+Test NG is an advanced version of JUNIT..  Test NG will provide more presentable report when compared to Junit...
+Annotation are readable and easily understandable in Test NG.
+
+
+Download the Test NG plugin from eclipse marketplace... In Ecliple -> Help -> Eclipse Marketplace
+
+
+@BeforeMethod - Similar to @Before in Junit
+@AfterMethod - Similar to @After in Junit
+@BeforeClass - Similar to @BeforeClass in Junit
+@AfterClass - Similar to @AfterClass in Junit
+@BeforeSuite - Will execute the precondition once before executing all the classes mentioned in a suite. This tag is not available in Junit
+@AfterSuite - Will execute the postcondition once after executing all the classes mentioned in a suite. This tag is not available in Junit
+@Test(enabled=false) - Will skip the test for execution... Similar to @Ignore annotation which was used in Junit to skip the execution of a particular test.
+@Test(priority=1) - Will execute the test at the first
+@Test(priority=2) - Will execute the test at the second
+@Test(timeout-10000) - This will fail the test case if the execution takes more than 10 seconds. Similar to Junit
+
+***************To Create A Test Suite in TestNG follow the below steps
+Run the particular class from eclipse
+Refresh the project
+In Test Output folder open the Index.html report file.
+Click on the first point under the heading Info.. -> XML file will be opened.
+Copy the Xml content
+Create a new file and paste the xml content and save the file with .xml extension
+In the xml file under the classes tag - enter the class names which you want to execute as below
+
+<classes>
+      <class name="TestNgTcOne"/>
+      <class name="TestNGTestCaseTwo"/>
+	  <class name="TestNGTestCaseThree"/>
+</classes>
+
+Open the xml file -> right click and select Run as TestNG Suite.  --> this will run as suite by executing all the classes whatever mentioned as above.
+
+************Parameterization in TestNG
+
+@DataProvider is an annotation in TestNg under which we will give the data inputs.
+Example
+@DataProvider
+	public String[][] getData()
+	{
+		String data[][]=new String[2][2];
+		data[0][0]="User001";
+		data[0][1]="Password001";
+		data[1][0]="User002";
+		data[1][1]="Password002";
+		return data;
+		
+	}
+
+Similar to Junit, in TestNg also we can do the verification and validation using the Assert statement.
+
+
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+********Handling Mouse options in webdriver
+
+Actions is a separate class which is used to handle the mouse options
+
+  //Need to instantiate the webdriver variable (driver) into Actions class, so that the webDriver can call the methods of Actions class.
+WebDriver driver = new ChromeDriver();
+Actions a=new Actions(driver); 
+
+
+*************Headless browser
+
+ChromeOptions is a class in WebDriver that can be used to customise the browser.
+ChromeOptions b=new ChromeOptions();
+		b.addArguments("--headless");
+
+*********************Handling Scroll Down Scroll up
+Cannot get the xpaths as this involves with the browser and not with the application.
+
+JavascriptExecutor is an interface in WebDriver which is used to integrate our very own javascript programs with webdriver.
+
+
+Syntax - ((JavascriptExecutor)driver).executeScript("window.scrollBy(horizontal pixel positions,vertical pixel positions)");
+((JavascriptExecutor)driver).executeScript("window.scrollBy(0,10000)");
+
+Navigations of forward and backward also can be done using javascripts as below.
+((JavascriptExecutor)driver).executeScript("history.back()");
+((JavascriptExecutor)driver).executeScript("history.back()");
+
+To verify whether the page is loaded successfully. Java script have the below code.
+String pageStatus=(String) ((JavascriptExecutor)driver).executeScript("return document.readyState");
+			System.out.println(pageStatus);  // the output should be printed as Complete. So that it means that the page is loaded successfully
+			

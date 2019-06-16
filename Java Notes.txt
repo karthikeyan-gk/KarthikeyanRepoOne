@@ -1,0 +1,2479 @@
+May/6/2018
+
+
+Difference between Path and Class Path
+Path - Folder path Location where Java is located in the system... - C:\Program Files\Java\jdk1.8.0_171\bin
+Class Path - Folder path Location where Class file is located in the system... - C:\Users\karthikeyan\eclipse-workspace\JavaLessonEight\bin
+
+To format the typed text in the proper alignment - press ctrl+shift+f
+
+system.out.print - prints in the same line
+
+ex
+
+system.out.print("karthi");
+system.out.print("Keyan");
+
+Output
+
+Karthi Keyan
+
+system.out.println - prints in the next line
+
+system.out.println("Karthi");
+system.out.println("Keyan");
+
+Output
+
+Karthi
+Keyan
+
+To highlight the statement use system.err.println("aaa");
+
+
+--Comment is a hintline to give description. This will not be executed. Statement preceeded with the Double backlash (//) is considered as comment.
+
+Example
+//system.out.println("test");
+
+
+Single line comment
+Example
+//system.out.println("test");
+//system.out.println("test");
+
+
+Double line comment
+
+/*
+system.out.println("test");
+system.out.println("test");
+
+*/
+
+
+--Command is a executable code.
+
+Example
+system.out.println("test");
+
+
+
+Variables
+**********
+
+Variable is a locator or storage place or identifier for storing the data value. Variable name should be unique.
+int X=100;
+
+here X is a variable
+
+
+
+variables should be declared with the predefined keywords called datatypes.
+
+here int is a datatype
+
+Example
+int priceAmount=100;
+
+
+Variable Declaration 
+int x;
+
+Variable Initialization
+int x=100;
+
+Variable can be overided in java. Example as below
+int x=9;
+x=10;
+x=11;
+
+SOS(x);
+Output
+11.
+
+Here java takes the last latest value as java follows LIFO(Last in First Out)
+
+
+
+3 types of datatypes - Primitive, Non primitive, Reference dataypes
+*******************************************************************
+
+Primitive Datatypes
+8 types of primitive datatypes - byte, short,int,long,float,double,char,boolean
+
+
+
+byte, short , int, long - these are the 4 datatypes which is used to store the numerical values.
+
+Example
+byte x=80;
+short y=90;
+int z=98;
+long g=76;
+
+1 byte =8bits
+
+byte is used to store 1 byte of data
+short is used to store 2 bytes of  data
+int is used to store 4 bytes of data
+long is used to store 8 bytes of data
+
+
+Float is used to store both numerical and as  well as decimal value. Float can store 4 bytes  of data. Whenever storing decimal value use f at the end.
+float r=5.4f;
+float e=76;
+
+
+Double is used to store both numerical and as well as decimal value. Double can storre 8 bytes of data. 
+double d=56;
+double c=56.5;
+
+
+Char is used to store only one characters in single quotes.Charge can store upto 2 bytes of data
+char l='5';
+
+
+Boolean can store upto one bit of data.
+boolean w=true;
+
+
+
+
+Non Primitive Datatypes - 2 types
+
+String and Array comes under Non Primitive data types. String and Array are inbuilt classes in java.
+
+
+String is used to store group of characters in doble quotes.
+Example;
+String k="Welcome";
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Difference between Primitive and Non primitive - In primitive all are datatypes but in Non primitive String and Array are classes
+
+Primitive also have a class called Integer. Bytes, Short, long, float comes under Integer class. So Integer has 4 types of datatypes
+
+Float class has two types of datatypes which is float and double
+
+Character class have one type of dataype called char
+
+Boolean class have onle one boolean datype 
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Reference Datatypes
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+OPERATOR
+********
+
+To perform any operation on the operands we need operator.
+Example - a+b
+a, b - operands
++ - Operator.
+
+****Arithmetic Operator (+,-,*,%,/) - To perform arithmetic operations
+
+
+****Relational Operator (<,>,<=,>=) - To compare the operands
+Example
+int valuea=10;
+int valueb=20;
+sysout(valuea>valueb);
+
+Output;
+False
+
+****Logical Operators - To perform logical operations. (&,&&, |, ||, NOT)
+
+Example for AND - execute only when both the conditions are satisfied
+int x=100;
+int y=99;
+int z=88;
+
+if (x>y && x >z)
+{
+sop("X is greater");
+}
+
+Output:
+X is greater  
+
+
+& - will check all the conditions till the end
+&& - will not check till the end if the first condition itself fails.
+
+Example for OR - execute when any one of the condition is satisfied
+int x=100;
+int y=99;
+int z=88;
+
+if (x>y || x >z)
+{
+sop("X is greater");
+}
+
+Output:
+X is greater  
+
+
+****Concatenation Operator - To concatenate or combine the operands - (+)
+
+Example
+String stringa="Karthi";
+String stringb="Keyan";
+sop(stringa+stringb);
+
+Output
+
+KarthiKeyan
+
+
+sop(x+""+y) - for joining numericals
+
+
+***** Assignment operator (=) - To assign the value to the variable
+
+***** Equivalence operator (==) - To compare the value
+
+Example
+
+int value d=10
+if (valued==10)
+{
+SOP("D=10");
+)
+
+
+
+**** Incremental Operator - To increment the value -(++)
+
+Post Incremental- X++
+Pre Incremental - ++X
+
+**** Decremental Operator - To decrement the value -(--)
+
+
+Pre Decremental - (X--)
+Post Decremental -   (--x)
+
+
+****Ternary Operator or Conditional Operator (:?)
+**** Bit wise Operator
+
+
+CONDITIONAL LOGICS
+******************
+
+2 types of conditional logics- Sequential logics, loops
+
+Sequential Logics - if, else, else if, nested if, switch block
+Loops - while, for, do while, for each
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+12/May/2018
+
+********Loops
+
+Difference between Sequential logic and loops
+
+In seq logic, the program will execute only when the condition is satisfied
+In loops, the program will execute until the condition is satisfied
+
+
+Generic statements in the loops
+
+1 intitialization - Starting point of the looping statements
+2 condition - Condition for the looping statements
+3 incrementation - How the statement is going to increment from one iteration to another iteration
+
+
+int x=0;  //Initialization
+while(x<10) //Condition
+{
+system.ot.println(x);
+x++;
+}
+
+
+x++  - Increments  one by one value
+X=X+2  - Increments the value in double times
+
+
+
+Prints the value from 0 to 9
+int a=0;  
+		while(a<10) 
+		{
+		System.out.println(a);
+		a++;
+		}
+
+
+Prints the value from 10 to 1		
+int b=10;
+		while(b>0)
+		{
+			System.out.println(b);
+			b--;
+		}
+		
+
+Prints the value from 0 to 8 in double increments (ex -0, 2, 4, 6, 8)
+int c=0;  
+		while(c<10) 
+		{
+		System.out.println(c);
+		c=c+2;
+		}
+		
+******** FOR Loop
+
+If i know the end value I can use for loop and as well as While loop
+If i dont know the end value I can use while loop
+
+
+for(int d=10; d<20; d++)
+{
+System.out.println(d);
+}
+
+
+
+********* Arrays
+
+Difference between Array and Datatype
+
+Datatype variable can store only one value
+Array can store multiple values in a single variable of the same datatype.  Two Types - Single Dimensional and Two Dimensional(Arrays of Array)
+
+Array is a collection or group of data.
+Array is a inbuild class in java which is used to store group of values under a single variable of common datatype.
+Array is a static data structure.  - Y0u can store the data only to the initialized memory level (- new int[5]) -> you can store only 5 values
+
+
+Array Declaration:
+new is a keyword which request the JVM to allocate the memory to store the data when declaring the array variable
+
+SINGLE DIMENSIONAL ARRAY
+------------------------
+
+int e[]= new int[5];   // array declaration
+e[0]=50;               // initialization
+e[1]=51;
+e[2]=52;
+e[3]=53;
+3[4]=54;
+System.out.println (e.length);                //to print the count of the array
+System.out.println (e[2]);                    //  to print the assigned value for the particular index
+ 
+for (int f=0;f<e.length;f++)                 // to print the entire array values use for loop
+{
+	System.out.println(e[f]);
+}
+
+
+TWO DIMENSIONAL ARRAY
+----------------------
+
+Contains Rows and Columns. No of Rows is the no of iterations here.
+
+int g[][]=new int[3][4];                  //two dimensional array declaration. [ROW][COLUMN]
+g[0][0]=100;
+g[0][1]=101;
+g[0][2]=102;
+g[0][3]=103;
+
+//second row
+g[1][0]=105;
+g[1][1]=106;
+g[1][2]=107;
+g[1][3]=108;
+
+//third row
+g[2][0]=110;
+g[2][1]=111;
+g[2][2]=112;
+g[2][3]=113;
+
+System.out.println("No of row is "+g.length);           // to print the length of the row
+System.out.println("No of Column is "+g[0].length);     //  to print the length of the column
+
+for (int h=0; h<g.length;h++)
+{
+for (int i=0;i<g[0].length;i++)
+System.out.print(g[h][i]+"----");
+System.out.println();
+}
+
+
+OBJECT ARRAY
+------------
+
+Object is a inbuild class in java. This will accept any combination of data type. To store multiple data type in a single array we can use Object datatype.
+Object array is a dynamic data structure.
+
+
+
+
+
+Object k[]=new Object[4];salary
+		k[0]=200;
+		k[1]="Selenium";
+		k[2]="JAVA";
+		k[3]="Eclipse";
+System.out.println(k[2]);
+
+
+
+***********FUNCTIONS
+--------------------
+
+
+A function or method is nothing but a block where we can write a set or collection of Java statements.
+
+Two types of fuunction - Predefined function and User defined function
+
+Predefined function - Main function
+User defined function - created by the user.
+
+
+
+ A single class can have many number of functions.
+ We can call a function for many number of times.
+ Functions are parallel to each other and it should not get overlapped. - (cannot delare another new function within one function.. whereas we can call another function in a function).
+ A function can accept any number of arguments or parameters.
+ A function can return only one value.
+ A function name should be unique.
+ Two functions using the same name but different parameters or arguments is called as function overloading.
+ A function can be static or non static.
+ 
+Declaration of Function
+
+First letter should start with Small letter.  Should follow Camel Case if there are two words.  -- Examplet getData();
+
+public static void getData();    // Declaration of function
+
+
+Void is non return datatype. Will not return any value.
+
+
+Program Coding
+
+public class JavaLessonThirdFunction {
+
+	public static void main(String[] args) 
+	{
+		System.out.println("Main Function");
+		doLogut();                           // Calling a user defined function in a main function
+		doLogin();                           // Calling a user defined function in a main function
+		manyNumberOfArgs(20,70);            // function with many number of args or parameters
+		manyNumberOfArgs(10,70);            // function with many number of args or parameters
+		manyNumberOfArgs(40,70);            // function with many number of args or parameters
+		int i= functionReturnVaue(40,60,70);
+		System.out.println(i);
+	}
+	
+	public static void doLogin()
+	{
+		System.out.println("dologin");
+		loginTest();
+	}
+	
+	public static void doLogut()
+	{
+		System.out.println("doLogut");
+	}
+	
+	public static void loginTest()
+	{
+		System.out.println("Login Test");
+	}
+	
+	public static void manyNumberOfArgs(int a, int b)   // Function signature for containing many number of args or parameters
+	{
+		int c=a+b;
+		System.out.println(c);
+	}
+	
+	public static int functionReturnVaue(int e, int f, int g)
+	{
+		int h=e+f+g;
+		return h;
+	}
+	
+
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+13/May/2018
+
+
+
+A function with the same name but different parameters is called function overloading.
+
+public static void doLogin()
+	{
+		System.out.println("dologin");
+		loginTest();
+	}
+	
+
+
+public static void doLogin(int x)
+	{
+	System.out.println("test");	
+	}
+
+
+***Example for Fn overloading
+
+public static void getcelldata(String sheetname, int Columnno, int rowno)
+	{
+		System.out.println("SheetName, Column No, Row No");
+	}
+public static void getcelldata(String sheetname, String Columnname, int rowno)
+	{
+		System.out.println("SheetName, Column Name, Row No");
+	}
+
+
+
+Example for Static function
+
+Static function will be declared with the keyword static
+
+public static void doLogin()
+public static void getcelldata(String sheetname, int Columnno, int rowno)
+
+
+Example for Non static function
+
+public void doSum()
+public void doSub()
+
+
+Static function can call only another Static function. Static function cannot call a non static function 
+Non static function can call both Static and Non static functions.
+
+Example for calling a static and non static functions in an another function
+
+public static void functionOne()
+	{
+             functionThree();
+		
+	}
+	
+	public void functionTwo()
+	{
+		 functionFour();
+	}
+	public static void functionThree()
+	{
+		functionOne();
+	}
+	
+	public void functionFour()
+	{
+	         functionTwo();	
+	}
+
+
+
+*****************Variables
+--------------------------
+
+
+Variable is a locator or identifier which is used to store the value or data.
+Variable has two types.  Local Variable, Global Variable.
+
+
+Local Variable - A variable which is declared within a function and used within a function is called a local variable. A local variable cannot be used in another 
+function.
+
+Example
+
+public class JavaLessonThirdFunction {
+
+
+
+	public static void main(String[] args) 
+{
+int x;
+}
+
+}
+
+
+Global Variable - A variable which is declared outside a function is called Global variable. This global variable can be accessed and used in all the functions
+ within a class.
+
+Example
+
+public class JavaLessonThirdFunction {
+
+int x;
+
+	public static void main(String[] args) 
+{
+
+}
+
+}
+
+
+There are 2 types of Global variables. Static Global variable and Non Static Global variable
+
+Static Global Variable. Static Global variable can also be called as Class variable.
+static String Y;
+
+Non Static Global Variable. Non Static variable can also be called as Instance variable. All the Non Static Global variables can also be called as Instance Variable
+int x;
+
+Example Program
+
+public class JavaLessonFourthVariables {
+
+	int a=67;
+	static String b="Testing";
+	public static void main(String[] args) 
+	{
+		System.out.println(b);
+
+	}
+	public void functionOne()
+	{
+		System.out.println(b);
+		System.out.println(a);
+	}
+
+}
+
+
+
+**************OOPS Concept
+--------------------------
+
+In OOPs concept there is no Static and Non static differentiate. Consider all the variables and classes as objects either it is static or non static . 
+Access all the java components as objects which is called Object Oriented programming.
+
+Object is a instance of a class. -- A memory will be created as objects for all the components in a class so that those objects can be easily used and accessed in the
+                                     java programming.
+
+A class can contain many number of objects.
+
+How to create a object :
+
+
+Syntax for creating a object  -  ClassName VariableName=new ClassName; 
+
+Example
+
+JavaLessonFourthVariables c=new  JavaLessonFourthVariables();
+
+
+here, 
+JavaLessonFourthVariables - Class Name
+a= Variable Name
+new - keyword for creating a memory.
+
+
+Example Program:
+
+
+public class JavaLessonFourthVariables {
+
+	int a = 67;
+	static String b = "Testing";
+	int d=50;
+	
+
+	public static void main(String[] args) {
+		System.out.println(b);
+		
+		JavaLessonFourthVariables c= new JavaLessonFourthVariables();
+		c.functionOne();                    // Non static function is called in static main function using object
+		System.out.println(c.d);
+		
+
+	}
+
+	public void functionOne() {
+		System.out.println(b);
+		System.out.println(a);
+	}
+
+}
+
+
+
+Non static functions cannot be called in static main function because by default non static function will not have memory allocated. So we are creating an object
+and using that object we are calling the non static variable in static main function so that the object will create the memory for the non static function to get 
+executed.
+
+By default, Static variable will have memory allocated.
+
+
+To call a static function which is declared in another class, use the classname.functionname
+
+Example                                               ------- write a program code 
+
+Class1 - Function 1
+
+Class 2
+class1.function1();
+
+
+To call a another class non static function in a current class create an object with the previous class name in the current class and use that object name. function 
+name in the current class
+
+Example                                                ------- write a program code
+
+Class1 - Function 1
+
+Class 2
+
+Class1 variablename=new class1();
+variablename.function1();
+
+
+
+
+Difference between object and object reference :            --- write a program code
+Object will not change.
+Object Reference will change.
+
+A variable which refers the object is called reference variable
+
+Example Program
+
+public class ObjectReferenceExample {
+
+	int x;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ObjectReferenceExample a= new ObjectReferenceExample();  //Objects
+		a.x=10;
+		ObjectReferenceExample b= new ObjectReferenceExample();  //Objects
+		b.x=20;
+		ObjectReferenceExample c= new ObjectReferenceExample();  //Objects
+		c.x=30;
+		
+		a=b;                                                     // OBJECT Reference
+		b=c;                                                     // OBJECT Reference  
+		c=a;                                                     // OBJECT Reference 
+		
+		System.out.println(a.x);
+		System.out.println(b.x);
+		System.out.println(c.x);
+	}
+
+}
+
+
+
+*************To provide the data at run time
+--------------------------------------------
+
+Scanner is a inbuild class in java to provide the value at run time
+
+
+Example Program:
+
+import java.util.Scanner;
+
+public class GettingTheValueAtRunTime {
+
+	public static void main(String[] args) {
+		
+Scanner s= new Scanner(System.in);
+String a=s.next();
+String b=s.next();
+String c=a+b;
+System.out.println(c);
+	}
+
+}
+
+
+In the above program, next() is a inbuild method which is used to type value at run time.
+
+
+How to run a program from the command prompt :
+
+
+create a java file in the local.
+launch the cmd prompt and type javac javafilename
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+C:\Program Files\Common Files\Oracle\Java\javapath;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\
+
+C:\Program Files\Common Files\Oracle\Java\
+
+
+
+19/May/2018
+
+***HANDLING EXCEPTIONS
+----------------------
+
+Exception is nothing but an unexpected error. Whenever we violate the rules of Java we will get the exceptions.
+Exception will stop the execution of the program at the point where the exception occurs.
+
+3 types of exceptions - Run time exception(Unchecked Exception), User Defined Exception and compile time exception (Checked Exception)
+
+RUN TIME EXCEPTION - Arithmetic Exception, Array Index Out Of Bound Exception, String Index Out of Boundary Exception, Null Pointer Exception, Number Format Exception, Input Mismatch Exception
+COMPILE TIME EXCEPTION - FileNotFound Exception, Interrupted Exception, SQL Exception
+
+
+To run the program end to end without stopping the execution even if the exception occurs, we need to handle the exception. Java provides the best exception handling
+mechanism.
+
+Exception is a inbuild class in java. Exception is a keyword. We need to write a script in such a way that eventhough exception occurs our program should run 
+continuosuly.
+
+
+By default any methods in java will not support exception handling. So we need to create a separate block within that method to handle the exception, that block is 
+called Try Catch block.
+
+
+Throwable will handle both error and exception.
+Throws will handle compile time exception
+Throw will handle user defined exception
+
+RUN TIME EXCEPTION
+------------------
+
+Run time exception is also called as unchecked exception.
+
+Program 1 -  Arithmetic exception
+
+
+main method()
+
+sop("a");
+
+try
+{
+intx=9/0;
+}
+catch (Exception t)
+{
+SOP(t.getMessage());
+//t.printStackTrace();
+//SOP("Failed because java does not allow infinity value. 9/0 gives infintiy");
+
+}
+
+SOP("b");
+
+
+
+
+Program 2 - String index out of memory exception
+
+
+main method()
+SOP("a");
+
+String f='SELENIUM";
+
+SOP(f.charAt(56));
+//SOP(f.charAt(2));
+SOP("b");
+
+
+Program 3 - null point exception
+
+Public class
+
+int x=10;
+
+main method()
+
+class name a= null;
+
+sop(a.x);
+
+
+
+
+Program 4 - Input mismatch exception
+
+
+
+Public class
+
+main method()
+
+Scanner d=new Scanner(System.in);
+
+int x=d.next();
+int y=d.next();
+int z=x+y;
+SOP(z);
+
+at run time if u give the input as string value then u ll get the exception as input mismatch exception
+
+
+
+
+parseInt is a method used to convert the number value which is stored as string into numeric value
+
+String x="100";
+int y=Integer.parseInt(x);
+sop(y);
+
+
+here 100 is declared as string but parseInt will convert into numeric value.
+
+
+Program 5 - Number format exception
+
+
+String x="Selenium";
+int y=Integer.parseInt(x);
+sop(y);
+
+
+here it will throw number format exception as the string value cannot be converted into numeric value by parseInt. 
+parseInt will convert only the numbr which is stored as string into numeric value.
+
+
+
+COMPILE TIME EXCEPTION
+----------------------
+
+
+Compile Time exception is also called as Checked exception
+
+
+FileInputStream is a inbuild method to read the file from the folder
+
+
+
+Program 1- To handle the file not found exception
+
+try{
+FileInputStream fis=new FileInputStream("C:\\Users\\karthikeyan\\Desktop\\Automation Learning\\Java Notes.txt");
+}
+catch(FileNotFoundException e)
+{
+e.printStackTrace();
+}
+
+
+
+
+
+wait command
+Thread.sleep(5000);
+
+Example  prog
+
+sop(a);
+Thread.sleep(5000);
+sop(b);
+
+Program 2- To handle the Interrupted exception caused by the wait statements.
+
+try
+{
+Thread.sleep(5000);
+}
+catch(InterruptedException e)
+{
+e.printStackTrace();
+}
+
+
+
+Throws is a keyword to handle the exception at compile time, instead of using try catch block use throws keyword
+
+public static void main(String[] args) throws FileNotFoundException, InterruptedException
+{
+
+FileInputStream fis1=new FileInputStream("C:\\Users\\karthikeyan\\Desktop\\Automation Learning\\Java Notes.txt"); //if the file location is wrong
+FileInputStream fis2=new FileInputStream("C:\\Users\\karthikeyan\\Desktop\\Automation Learning\\Java Notes.txt"); //if the file location is correct
+}
+
+
+here the program will execute the fis1 line and will throw file not found exception and stop the execution. It will not execute the fis2 line. Throws keyword
+will just throw the exception and it will not handle the exception to continue the execution.
+
+try catch is the best method to handle the exceptions in java
+
+
+USER DEFINED EXCEPTION
+----------------------
+
+User defined exception comes under compile time exception.
+
+throw is a keyword to declare the user defined exception.
+
+main method()
+{
+throw new Exception("Login was not successful")
+}
+
+
+
+****Finally Block
+-----------------
+
+finally block is used to run the taks which is to be executed mandatorily. This block will be executed even if the try block and catch block is executed or not.
+
+finally
+{
+SOP("Print finally block");
+}
+
+
+Exam prog
+
+public static main method()
+
+try
+{
+SOP("OPEN DATABASE");
+int x=9/0;
+sop("Close database");
+}
+catch(Exception)
+{
+SOP("Arithmetic Exception")
+}
+finally
+{
+SOP("Close database");
+}
+
+
+FINAL KEYWORD
+
+final is a keyword used to declare a constant or final value to the variable.
+
+
+final int x=100;
+x=90;  //should throw error.
+
+
+Here x will accept the value 100 only. It will not be overridden with the value 90. as the value 100 is declared with the keyword final
+
+
+
+Difference between Exception and Error:
+--------------------------------------
+
+
+Exception can be handled within the program.
+
+Error cannot be handled within the program. It can be handled by the infrastructure or environment management.
+
+Only error which can be handled within the program is Assertion Error.
+
+
+
+example program for assertion
+
+public void test()
+{
+
+int x=10;
+int y=20;
+
+sop("a");
+
+Assert.assertEquals(x,y);   // Syntax - Assert.assertEquals(expected,actual);
+
+sop("C");
+
+}
+
+
+Above will throw an error
+
+to handle the above error , use try catch block as below
+
+Assertion can be handled only in JUNIT and not in JAVA. So Assertion program cannot be written in main method. Assertion program should be written outside the main
+method using @. under @ we can write the assertion program.
+
+
+@test
+public void test()
+{
+
+int x=10;
+int y=20;
+
+sop("a");
+
+try
+{
+Assert.assertEquals(x,y); 
+SOP("C");
+}
+
+catch (Error t)
+{
+SOP("Assertion failed error");
+}
+
+
+Here Error is a keyword which is used to handle the assertion error. Error is a inbuild class. This can be used to handle only assertion errors and not other errors.
+
+
+	
+***THROWABLE
+------------
+
+Throwable is a keyword used to handle both error and exceptions. Throwable is a parent for both Exception and Error.
+This is used when user is not aware whether he will get error or exception.
+
+@test
+public void test()
+{
+
+int x=10;
+int y=20;
+
+sop("a");
+
+try
+{
+Assert.assertEquals(x,y); 
+SOP("C");
+}
+
+catch (Throwable t)
+{
+SOP("Assertion failed error");
+}
+
+
+
+Exception propagation.
+
+If we use throws for a method. And if we call that method in a main method means, then we have to use throws for the main method also.
+
+Example program...
+
+Public Class ExceptionPropagation
+{
+
+public static void main(String[] args) throws FileNotFoundException, InterruptedException    // if we didnt use throws here then error will be displayed as the called methods use throws in their delcaration.
+{
+test1();
+test2();
+}
+
+public static void test1() throws FileNotFoundException
+{
+FileInputStream fis1=new FileInputStream("C:\\Users\\karthikeyan\\Desktop\\Automation Learning\\Java Notes.txt"); //if the file location is wrong
+}
+
+
+public static void test2() throws InterruptedException
+{
+Sop("A");
+Thread.sleep(5000);
+SOP("C");
+}
+
+}
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+20/May/2018
+
+*************INTERFACE
+----------------------
+
+Interface is nothing but a blue print (blue print means pattern or strucuture or declaration) of a class.
+Parent class is nothing but an interface. Interface is a collection of abstract methods.
+
+Interface will have only methods declaration and not the programming code. Child classes will use those methods and will contain the programming code for that method.
+In other words, a child class will implement the abstract methods of parent class or Interface and will have the programming code for those methods.
+
+
+Interface is a collection of abstract methods. A method which dont have any body or content of any programming code is called abstract method
+
+In interface all the methods are non static.
+
+We cannot create object for interface. But we can declare the variables in the interface, but that should be the final.
+
+A single class can implement any number of interface.
+
+A interface can be implemented by any number of java class.
+
+If a class implements one interface then the class should have all the methods of that interface. For ex, if a interface have 10 methods, then the class which implements
+that should contain all the 10 methods even if the classs use that method or not. 
+
+A class can have its own additional methods even if it implements the interface methods also.
+
+
+
+To create a new interface ---> Right click ---> New -----> Interface
+
+Interface will be created as follows
+
+public interface Bank                      ////Interface
+{
+public void debitCard();                   ////Abstract method
+public void credit();                      ////Abstract method
+public void loans();                       ////Abstract method
+
+}
+
+
+
+Example program  -- A class implementing the methods of interface.
+
+
+
+
+
+public class Hdfc inplements Bank
+{
+
+public static void main(String[] args)
+{
+
+Hdfc a=new Hdfc();
+a.debitCard();
+a.credit();
+a.loans();
+}
+
+
+public void debitCard();
+{
+
+sop("Bank Debit Card");
+}
+
+public void credit();
+{
+Sop("Bank Credit Card");
+}
+
+
+public void loans();
+{
+sop("Bank Loan");
+
+}
+}
+
+
+Syntax for a single class implementing many number of interfaces...........................
+
+public class Hdfc implements Bank, College
+{
+public static void main(String[] args)
+{
+}
+}
+
+
+*********************CONSTRUCTOR
+--------------------------------
+
+
+Constructor is used to initialize a value to the variable.
+For example, String variable has a default value as NULL and interger variable has a default value as 0.  These values are initialized by constructor. If the 
+user doesnt initialize a value to the variable then the default value will be initialized to the variable by the constructor.
+
+
+Each and every class will  have constructor.
+
+
+Constructor name and class name will be same.
+
+A block which the same name as that of the class name then that block is called constructor.
+
+Constuctor will look like a method but it is not a method because constructor dont have return type by default.
+
+Whenever we create a object for the class, automatically the constructor will be executed since the class name and constructor name are same.
+
+Example program:
+
+public ConstructorClass()
+{
+
+static String name;
+static int x;
+
+public ConstructorClass()
+{
+Sop("This is a constructor block");
+}
+
+ public static void main(String[] args)
+{
+ConstructorClass a= new ConstructorClass();
+}
+
+
+
+
+Example program 2 - To use the constructor of one class in another class.
+
+public class Sample
+{
+public static void main(String[]args)
+{
+ConstructorClass b=new ConstructorClass();
+b.x=10;
+b.name="Selenium";
+SOP(b.x);
+SOP(b.name);
+}
+}
+
+
+
+Write a program for parameterized constructor ????????????????
+
+
+
+********************************************Constructor Overloading
+
+Constructor with same name but different parameters(Default const and parameterized constructor).
+
+
+public ConstructorClass()
+{
+
+static String name;
+static int x;
+
+public ConstructorClass()                                ////Default constructor
+{
+Sop("This is a constructor block");
+}
+
+
+public ConstructorClass(int d, String y)                /////Parameterized constructor
+{
+x=d;
+name=y;
+}
+
+
+
+
+ public static void main(String[] args)
+{
+ConstructorClass a= new ConstructorClass();                      //Object without parameters
+ConstructorClass c= new ConstructorClass(100,"Karthikeyan");     //object with parameters
+}
+
+
+
+Whenever we create a object without parameters, then the default constructor will be executed.
+
+Whenever we create a object with parameters, then the parameterized constructor will  be executed.
+
+
+
+
+
+
+*******************************PACKAGE
+---------------------------------------
+
+
+Strucure ---- Java proj --> Src --> Package --> Java file
+
+
+To create a package -- right click ---> new ----> package.... Package name should start with small letter.
+
+
+
+
+*****************************Modifiers
+--------------------------------------
+
+
+Modifiers will provide the accesibity rights to the java components.
+
+2 types of modifiers - Access modifiers and Non access modifiers
+
+Access modifiers - public, default (package), private, protected
+Non Access modifiers - abstract, final, static
+
+
+Public class syntax -- public class Classname
+Default Class Syntax  -- class Classname
+
+.... A class can be a public. If it is public, it can be accessed by anywhere across the project even by the other packages in that project.
+.... A class can be a default. This can be accessed only within the package.
+.... A class cannot be protected and private.
+
+
+
+public method syntaz-- public static void test();
+Default method syntaz -- static void test();
+Private method syntaz -- private static void test();
+
+... A Method can be a public. If it is public, it can be accessed by anywhere across the project even by the other packages in that project by using the object.
+... A Method can be a default. This can be accessed only within the package.
+... A Method can be a private. This can be accessed only within the class. Not accessed outside the class.
+... A Method can be protected.  This can be accessed only within the package and the sub class which inherits the parent class
+
+
+public variable syntaz-- public int x;
+Default variable syntaz -- int x;
+Private variable syntaz -- private int x;
+
+... A Variable can be a public. If it is public, it can be accessed by anywhere across the project even by the other packages in that project by using the object. Not applicable for Local variable
+... A Variable can be a default. This can be accessed only within the package. Local Variable is always Default..
+... A Variable can be a private. This can be accessed only within the class. Not accessed outside the class.
+... A Variable can be protected.  This can be accessed only within the package and the sub class which inherits the parent class
+
+
+public Constructor syntaz-- public ConstructorClass();
+Default Constructor syntaz -- ConstructorClass();
+Private Constructor syntaz -- private ConstructorClass();
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+26/May/2018
+
+***************COLLECTIONS
+               -----------
+
+
+Collections is similar to array. But Collections is a Dynamic data structure. Array is a static data structure.
+
+Collections is an interface.  It is a dynamic data structure which is used to store a group of values under a single object.
+
+
+Array is a static data structure - can store data only to the fixed memory size. Ex - a[5] can store only 5 values to the variable a.
+Collectection is a dynamic data structure - can store data to any memory size. 
+
+Collections Components	- List, Set, Map, Iterator
+
+List, Set, Map, Iterator  - These are all inbuild interfaces.
+
+List - Array List, Linked List
+Set - Hash Set, Linked Hash Set, Tree Set
+Map - Hash Map,	Linked Hash Map, Tree Map, Hash Table
+
+Iterator - Iterator is an interface. There is a method called iterator() in the Iterator interface. iterator() method is a common method available in List, Set and Maps
+
+List is an interface. Array list is an inbuild class in Java which implements List. Array list is one of the component of collentions. 
+Array list is a dynamic data structure. It is used to store the group of values under a single object.
+
+
+
+hasNext() - This is method used to check whether the next value is there or not. if the next value is there it will return true, And the while block will be
+             executed if it is true. if it is false while block will not be executed
+
+
+Example Program:::
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Arraylist {
+
+	public static void main(String[] args) {
+	
+		ArrayList<Integer> a = new ArrayList<Integer>();  //arraylist declaration
+		a.add(12);
+		a.add(14);
+		a.add(89);
+		a.add(22);
+		a.add(78);
+		System.out.println(a.get(3));
+		System.out.println(a.size());    // to get the count of the array list
+
+		for(int i=0; i<a.size();i++ )        // Iteration using for loop
+		{
+			System.out.println(a.get(i));
+		}
+		Iterator <Integer> c=a.iterator();  // Iteration using Iterator.   Iterator Declaration
+		while(c.hasNext())           //hasNext() is method used to check whether the next value is there or not. if the next value is there it will return true and the while block will be executed if it is true. if it is false while block will not be executed
+		{
+			System.out.println(c.next());
+		}
+			
+		
+
+	}
+
+}
+
+
+
+
+Linked List - Similar to Array list. But the fetching of value in the linked list is slower than Array list.
+
+We can fetch the value in the Array list faster that the linked list because JVM have the direct access to all the indexes in the array list but whereas in the
+Linked list JVM have the access only at the first index. So to refer the 3 index in the linked list JVM will access the first index and then go to the third index.
+
+So while retrieving the huge number of data Array list is the best than the linked list
+
+
+When we freuently modify the data, Linked list is the best way and Array list is the worst way. Because Array list follows the resizeable architecture. So removing or
+adding the data will change the entire structure of array list. 
+
+Linked list follows the Doubly linked architecture.
+
+************COMMON FEATURES OF ARRAY LIST AND LINKED LIST
+
+Both Array list and Linked list allows the duplicate values.
+
+Both Array list and Linked list are non synchronised.
+
+Both Array list and Linked list follows insertion order. Data will be printed in the order which we declared.
+
+Both Array list and Linked list are the child of List class.
+
+************DIFFERENCE BETWEEN ARRAY LIST AND LINKED LIST.
+
+When we frequently retrieve the data use Array list.
+When we frequently add or modify the data use Linked list.
+
+Linked list follows the Doubly linked architecture.
+Array list follows the resizeable architecture.
+
+
+
+
+
+****************************SET
+-------------------------------
+
+
+Set will not accept duplicate values. Using Add method we can store the data in the Set.
+
+Set has no index.  There is no Get method in Set. 
+
+ HashSet - doesnt allow duplicate values. It prints the data in the random order
+
+ Linked HashSet - Doesnt allow duplicate values. It prints the data in the Insertion order (i.e, the order in which we declared the data)
+
+ TreeSet -  Doesnt allow duplicate values. It prints the data in the Ascending Order.
+
+To print the data in the Descending order , use treeset. In the tree set declaration use the method Collections.reverseOrder()
+
+TreeSet <Integer> a=new TreeSet<Integer>(Collections.reverseOrder());
+
+
+
+****************************MAP
+--------------------------------
+
+In Map, the values will be store based on the key(Variable) and key values. The values will not be stored based on the index.
+
+
+HashMap - In Hashmap, we dont have add method. Instead we have put method. It will print the data in the Random order.
+
+Difference between Key and Key Set.
+  Single variable is a key.
+  Collection of multiple variables is key set.
+
+Difference between Value and Value Set.
+  Single value is a value.
+  Collection of multiple values is Value set.
+
+Difference between Entry and Entry Set.
+  Entry - A single key and Key value
+  Entry Set - Combination of multiple key and key values
+
+
+
+LinkedHashMap - In LinkedHashmap, we dont have add method. Instead we have put method. It will print the data in the Insertion order.
+
+
+TreeMap - in TreeMap, we dont have add method. Instead we have put method. It will print the data in the Ascneding order.
+          To print the data in the Descending order , use treemap. In the tree map declaration use the method Collections.reverseOrder()
+
+
+
+HashTable - Will not accept Null values.
+
+a.put("salary","NULL"); // This will throw error in hash table as it wont accept null values
+
+
+
+
+HashMap, Linked HashMap, TreeMap - Non synchronized. Execution speed will be high as it allows multiple thread for execution.
+Hash Table - Synchronized. Execution speed will be less as it allows only thread for execution
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+27/May/2017
+
+JAR Files -- Java Archive Files...  --- Group of Java files.....
+
+To create the JAR file ----> Right Click on the project--> Click Export--> Selecct Runnable JAR file under JAVA --> In the launch configuration select the class file for which jar file to be created ---> In the destination give the folder path in which the jar file to be placed
+
+To execute the JAVA Jar file in CMD------>>> java -jar Filename.jar
+
+
+
+
+**************File Handling
+---------------------------
+
+All the Web elements stored in the properties files. - also called Object repository. File Extension --> .property
+
+All the URLs can be stored in Text file
+
+All the logs of the execution will be captured in the Log file -- File Extension --> .log
+
+Result of the execution will be captured in the Report file  ----File Extension --> .html
+
+Output file --- File Extension --> .txt
+
+
+
+***********List of files which are  to be handled using Java for selenium
+
+Txt file
+Excel file
+Properties file
+Log file
+Html file
+PDF file
+CSV file
+Word file - Extension to create a word file --> docx
+XML file
+
+
+In java, we can handle the file through STREAMS.  STREAM is a technology in JAVA which is used to read the data from the file and also write a data into the file.
+
+Using STREAM we need to connect to the file first and then only we can read or write the data in file.
+
+
+BufferedWriter is a inbuild class in java to write a data into the file.  FileWriter is a stream of Buffered writer to establish a connection with a file.
+
+write() - Method to write the data into the file
+close() - Method to save and close the file in which the data is written. This is mandatory in use.
+newLine() - Method to write the next data in next line.
+
+
+
+FileWriter t= new FileWriter("C:\\Users\\karthikeyan\\Desktop\\Automation Learning\\Files\\Selenium.txt");  /// Will not ammend the data. Instead it will overwrite the existing data with the new data
+FileWriter t= new FileWriter("C:\\Users\\karthikeyan\\Desktop\\Automation Learning\\Files\\Selenium.txt",true); //this syntax is used to append the file. If we write the file for second time only the new data will be in the file. Old data will be removed. So use True so that the file will be appended.
+
+
+
+
+BufferedReader is a inbuild class in java to read a data from the file.  FileReader is a stream of BufferedReader to establish a connection with a file.
+readLine() - Method to read the data from the file
+
+
+JAVA dont have inbuild class to handle XLSX file. So we have to use external JAR file called POI.
+POI - Jar file provided by Apache.  Using this POI jar file we can handle the XLSX file.
+
+
+To add the external jar files into our project ---- Right Click Project --> properties--> select java build path--->select Add external Jars
+
+
+
+
+
+**************Hanling Property File
+-----------------------------------
+
+Property file is a normal text file which contain the address or IDS of objects or web elements.
+Property file extension is ---->  .properties
+
+
+
+
+********************* Handling Log file
+---------------------------------------
+
+All the execution steps will be tracked in the log file.  
+
+Extent Report is a third party jar file used to hanlde log file.  --- In google search with Download Extent Report Jar file
+ 
+
+log4j is one of the apache product.log4j is a logging mechanism.  log4j is the package which is used to write the logs in text file.
+
+Logger, Appender, Layout are the 3 classes which are available in the log4j package.
+
+Logger - tracks the information and write the information
+Appender - will take all the information track into the destination path.
+Layout - designs the layout of the log file.
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2-Jun-2018
+
+
+******************************LOCATORS
+--------------------------------------
+
+Locator is nothing but the address of the web object.  Identifying the web objects through various ways (ID, Name, Xpath, Link, CSS, DOM) is called locator.
+
+Element is nothing but a tag which is a starting point of the web object.
+
+
+Web Objects - text box, radio button, drop down, check box, headings, text
+
+Attributes provide the additional information about a web element.
+
+
+2 types of Locators - Attrbute based locators and Sructure based locators.
+
+
+
+Attribute based locators - ID, Name, Link, 
+
+*******Drawbacks of Attribute based locators.
+We cannot use attribute based locators when the attributes(id, name) have same value for the web object. In this case we can use Structure based locators.
+When there is no attributes (id, name,link) for the web object we cannot use attribute based locators. In this case we can use Structure based locators.
+When the attribute values keep on changing dynamically, then we cannot use attribute bases locators. In this case we can use Structure based locators.
+
+Structure based locators - Xpath, CSS, dom
+
+Xpath is a technology which is used  to navigate to the webelement. Xpath is one of the locator to locate the web element. Xpath will be unique.
+Xpath is a primary locator used in automation
+
+SYNTAX OF XPATH
+
+Default Syntax.....
+xpath=//element[@attribute='attributevalue']
+ex - //input[@id='001']
+
+Xpath with functions.....
+
+Node - set functions - last(), last()-n, position()
+
+Syntax for Xpath Node Set Functions.......
+-------------------------------------------
+
+xpath=//element[@attribute='attributevalue'] [Last()]
+xpath=//element[@attribute='attributevalue'] [Last()-n]
+xpath=//element[@attribute='attributevalue'] [Position()=n]
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3/June/2018
+
+XPath Syntax for handling links
+
+xpath=//a[text()='linkname']
+
+
+XPath with string function -  this can be used for identifying the links when there is no attribute value (id, name, etc) for the links.
+
+starts-with function() ------- Xpath= //a[starts-with(text(),'Eng')]
+
+contains function()   ------- Xpath= //a[contains(text(),'Eng')]
+
+
+Path from the root directory is called Absolute path
+only the direct file name is called relative path
+
+Identifying element with more than one attributes by using operators (And, OR)
+
+Using OR - Identifies the web object when any one of the attributes matches
+
+xpath=//element[@attribute1='attributevalue' or @attribute2='attributevalue' ]
+
+Using AND - Identifies the web object only when both the attributes matches
+
+xpath=//element[@attribute1='attributevalue' and @attribute2='attributevalue' ]
+
+
+Usage of Starts with function for attribute function - this is used when the value of the web element is getting changed dynamically on web page refresh.
+
+Syntax...
+xpath= //input[start-with(@attribute,'attribute value')]
+
+Example
+Intial Webelement name - Selenium001.. On refresh this changes to Seleniumoo2 and so on. In this case use the above syntax.
+xpath=//input[starts-with(@id,'Selenium')]
+
+
+Usage of Contains for attribute function - this is used when the value of the web element is getting changed dynamically on web page refresh.
+
+Syntax...
+xpath= //input[contains(@id,'attribute value')]
+
+Example
+Intial Webelement name - 001Selenium.. On refresh this changes to 002Selenium and so on. In this case use the above syntax.
+xpath=//input[contains(@id,'Selenium')]
+
+
+Syntax for Xpath, when we dont know what type of element, use the below
+Xpath= //*[@id='001']
+
+Syntax for Xpath, when we dont know what type of element and dont know what attribute, use the below. This will refer the value directly and locate the web object.
+Xpath= //*[@*='001']
+
+
+xpath=(//input[@type='text'])[1]
+
+
+Fire IE Browser is an external Excel Macro file which is used to find the xpaths for the web objects in the IE browser.
+
+
+Absoulte xpath is effectively used when there is no attribute value (id, name, etc) for the web element.
+Disadvantage of absolute xpath - when the structure of the root changes then we cannot use absolute xpath. Refer the example below
+
+Example - Intial root is - <html> <head> <div> <input>
+Changed root is - <html> <head> <body> <div> <input>
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+9-June-2018
+***********
+
+
+
+In CSS, only the attributes ID and Class contain the special syntax
+
+CSS - Cascading Style Sheet.......  - CSS is a technology used to design or stylish the html page
+
+Syntax for CSS XPATH for the attribute ID is - input#attributevalue...
+example
+input#001
+
+
+Syntax for CSS XPATH for the attribute Class - input.attrbutevalue
+example
+input.002
+
+
+Generic syntax in CSS for the other attributes
+
+CSSXPATH -- element[attribute=attributeValue]
+
+Example for the attribute Name
+
+input[name='UserName']
+
+
+In CSS, instead of starts-with we can use the symbol ^. Example as below.
+css=input[id^=001]
+
+In CSS, instead of ends-with we can use the symbol $. Example as below.
+css=input[id$=001]
+
+In CSS, instead of contains we can use the symbol *. Example as below.
+css=input[id*=selenium]  -- this will locate the object which contains the selenium as the value for the attribute id.
+
+
+
+If we are using the application in IE browser then use CSS instead of Xpath... IE broswser converts the xpath into CSS which will take lot of time. So using CSS
+to identify the web objects in IE browser is the best way.
+IE does not have inbuild support for Xpath feature. But all the browsers supports the CSS feature.
+
+When we do the cross browser testing, we can go for CSS since all the browser easily supports and recognize the CSS objects.
+
+
+
+**********DOM 
+
+Document Object Model - DOM. Supported by all browsers. Can be used when we want to recognize the web objects very fast.
+
+Only two syntaxes are available in DOM such as ID and Name as below.
+
+Syntax - document.getElementById('attributevalue')
+Example - document.getElementById('001')
+Syntax - document.getElementByName('attributevalue')
+Example - document.getElementByName('UserName')
+
+If there are two objects with same attribute values then use the DOM syntax with the position as below.
+Syntax - document.getElementByName('attributevalue')[position]
+Example - document.getElementByName('UserName')[1]
+
+
+Best  Locators
+1. ID - since it is unique
+2. Name - since it is unique
+3. CSS - supported in all browsers
+4. DOM
+5. XPATH - supported in all browsers and is much fast in the browsers other than IE
+
+
+
+
+
+******************************************************WEBDRIVER
+_______________________________________________________________
+
+
+Selenium automate the browser.
+Selenium supports multiple browser.
+Selenium is a platform independent tool.
+Selenium supports multiple programming language (Java, Python, Ruby, Csharp, DotNet)
+Selenium is not an installation tool. It is a jar file which we can download and import into our project.
+Selenium is a non commerical. It is a freeware.
+
+Selenium IDE - Its a selenium component which has UI. It is a record and playback tool.
+Selenium RC- Its a selenium compnent which dont have UI. We need to download the jar file for RC and import in our java project.
+
+
+Versions....................
+Selenium 1 - IDE, RC
+Webdriver2
+Webdriver3. 
+Currently there is a new release called Webdriver4.
+
+
+Webdriver is a automates the browser.
+Webdriver is a plugin. It is a jar file which we can download and import into our project.
+Webdriver supports multiple programming language (Java, Python, Ruby, Csharp, DotNet)
+Webdriver is a platform independent tool.
+Webdriver can automate the web browsers and also mobile applications.
+Webdriver is a non commerical. It is a freeware.
+Webdriver is an interface which is implemented by all the webbrowsers.
+Webdriver is an instance for the browsers.
+
+
+Webdriver Drawbbacks
+
+Webdriver cannot support external files
+Webdriver cannot perform end to end automation
+Webdriver cannot support backend database validations
+Webdriver cannot support windows applications
+
+
+
+
+
+Webdriver is an interface. Browser(IE browser, Firefox, Chrome) is a class implements the webdriver (Interface)
+All the webdriver commands are implemented in JavaScript. We are just calling those methods and using in our program. Example methods are - findElement(),
+ click(), get().
+ 
+ JavascriptExecutor is an interface in WebDriver which is used to integrate our very own javascript programs with webdriver.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+16-Jun-2018
+
+
+
+
+JavaScriptExecutor is a inbuild interface in selenium webdriver which is used to execute the javascript.
+
+
+Firefox profile
+
+firefox.exe -p  --> is a command used to create a firefox profile. type this command in run and click OK button.
+
+
+
+To refresh a page use the command - driver.navigate().refresh();
+
+
+
+17-Jun-2018
+
+
+Webdriver cannot handle database in automation.. So JDBC is used to automate the database validation.
+
+
+JDBC is an API or Interface which sit between database server and programming language(Java)..
+
+JDBC - Java with Database Connectivity...  -- Through Java we gng to interact with the Data base
+
+mysqlconnector is a jar file which is used to connect the java program to the jdbc
+
+
+MYSQL Command Line Client
+
+1. Server install
+2. Client install
+3. To see list of databases in the server use the command in client: show databases
+4. use databasename is a command to select the database from the list
+5. show tables is a command used to see the list of tables in the selected database.
+
+
+
+
+
+Handling JDBC
+
+createStatement() is a method which is used to execute the simple queries like Select queries without any where condition. If we use createStatement method, then we
+will call the excuteQuery() method and passs the query which is to executed in the executeQuery() method.
+
+Example 
+
+public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException {
+		String driver="com.mysql.jdbc.Driver";
+		Class.forName(driver).newInstance();
+		
+		Connection connect=DriverManager.getConnection("jdbc:mysql://localhost:3306/world","root","root");
+		Statement state= (Statement) connect.createStatement();   //createStatement() is used to execute the simple select query without any where condition
+                ResultSet rs=state.executeQuery("select * from employee"); // the query which is to be executed will be given in the exequteQuery method only when the method createStatement is used.
+		rs.next();
+		System.out.println(rs.getString("name"));
+
+
+prepareStatement() is a method which is used to execute the queries with where clause and insert queries and delete queries. If we use prepareStatement() method, then
+we can pass the query in the same method itseld which is to be executed. No need of separate method called executeQuery() to pass the query.
+
+Example
+
+
+public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException {
+		String driver="com.mysql.jdbc.Driver";
+		Class.forName(driver).newInstance();
+		
+		Connection connect=DriverManager.getConnection("jdbc:mysql://localhost:3306/world","root","root");
+		PreparedStatement state= connect.prepareStatement("select * from employee where area=?"); //preparedStatement() is used to execute the query with where clause and also insert queries
+                state.setString(1,Delhi);  // will pass the value delhi in the above query
+                PreparedStatement del= connect.prepareStatement("delete * from employee where area=?");
+                del.setSting(1,"Mumbai");
+                del.executeUpdate();
+                PreparedStatement ins= connect.prepareStatement("insert into employee values(?,?,?,?)");
+                ins.setInt(1,4);
+                ins.setString(2,"Karthi");
+                ins.setString(3,"KL");
+                ins.setInt(4,50000);
+                ins.executeUpdae();
+                connection.close();
+
+
+
+*********************WAIT STATEMENTS
+____________________________________
+
+
+
+To Synchronize our code execution along with the application we can use the wait statements.
+
+ 2 Types of Waits - Asynchronzie wait and Synchronize wait.
+
+  #######Thread.Sleep() is a Asynchrronize wait. Thread.Sleep() is provided by Java concept
+
+Synchronize wait is provided by Webdriver concept. There are 2 types of synchronize wait -  Explicit Wait and Implicit Wait
+
+WebDriverWait is a inbuild class which is a explicit wait.
+Syntax ..  WebDriverWait wait=new WebDriverWait(driver,10);   ---> waits for 10 seconds....  by default it will accept in seconds
+wait.until(ExpectedConditions.alertIsPresent()); ----> waits until the aler box appears
+
+
+
+Diff between Explicit and Implicit Wait -- Implicit Wait is applicable to all the webelements.  Explicit Wait is applicable only for the elements to which the 
+                                           explicit wait statement is given
+                                              
+
+
+*********ImplicitWait 
+
+driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);  //Waits for 3 seconds
+
+
+
+
+
+
+Maven is a product of Apache. It is a freeware.
+
+It is a build integration tool for java. It is used to execute the java  project from the command prompt.
+Maven automates the process of library management.
+Library is a collection of jar files.  
+
+Webdriver will not support for Library management. So we are using Maven for Library Management.
+
+Maven is a tool which handles the library for handling the external JAR files automatically
+
+
+POM - Project Object Model. - All the project related information will be given in the POM.xml file in Maven. 
+During execution Maven reads the POM.xml file and executes according to the information provided in the POM.xml file
+
+POM.xml file in Maven is similar to the Build.xml file in Ant which contains the information for execution
+
+PROCESS AUTOMATION
+
+Below are the processes which comes under process automation
+1. Library Management - Done by Maven
+2. Repository Management - Git, BitBucket
+3. Creating an execution management - Done by Jenkins
+4. Scheduling the time for the execution in jenkins
+5. Publishing the report via email
+
+Robot is an inbuild class in java which is used to handle the keyboard events. In other word Robot class is used to perform the keyboard events.
+keyPress() is method of Robot class which is used to give commands via keyboard automatically.  Ex - pressing enterbutton
+keyRelease() is a method of Robot class which is used to release the key which is pressed via keyboard
+
+
+Jenkins is a continuous integration tool which is used to execute the automation scripts.
+
+
+	
+**********JUNIT
+
+There are  2 Templates in Java program... -- > Development template and Testing Template.
+Using Main Method in a program is Development template.  JUNIT is a testing template in JAVA...
+
+JUNIT is nothing but an unit testing tool only for Java.. It is used to test the application unit by unit. JUNIT is used to test the entire application by
+splitting into multiple components. JUNIT is  a open source testing framework. Using Junit we can perform verification and validation for each
+and every units or test cases. JUNIT is nothing but a framework controlling entity. JUNIT will provide a presentable report at the end of the execution.
+There will not be any main methods inside JUNIT template. All the methods will be controlled through annotations. There will not be any static methods in JUNIT. 
+All the methods in JUNIT are non static.
+
+In Junit , there is a automatic inbuild faesability to generate the test report in HTML format. Since JUNIT is a testing template there is a inbuild feature
+for generating the test report.
+
+
+A Template which contain the required components for testing purpose (Verification, Validation, Test Reports)  is called Testing 
+template. Ex - JUNIT, TESTNG, CUCUMBER.
+
+JUNIT and TestNG are the unit testing tools only for java programming language not for any other programming language..
+
+Testing Templates ---> Junit, TestNG, Cucumber.... These are otherwise called as Frameworks... Frameworks or templates nothing but a skeleton..
+
+
+JUNIT is not a separate tool . JUNIT is just a JAR file. BY default JUNIT is a inbuild plugin in Eclipse.
+
+Junit annotations methods execution will be in random order by default.
+Annotations in JUNIT - @Test, @Before, @BeforeClass, @After, @AfterClass, @RunWith, @SuiteClasses, @Parameters, @Ignore, @Rule
+
+@Ignore is a annotation which is used to ignore the particular annotation method.
+
+Example
+	@Test
+	public void verifyLoginSuccessTest()
+	{
+		System.out.println("Login Test Case is Successful");
+	}
+	
+	@Ignore
+	@Test
+	public void verifyRegistrationTest()
+	{
+		System.out.println("Registration Successful");
+	}
+
+In the above program verifyRegistrationTest() method will be ignored for execution.
+
+@Before is a annotation in Junit where we can give the preconditons for our test. If @Before is failed then the rest of the @Tests will not be executed.
+@After is a annotaion in Junit where we can give the postconditions for our test.
+
+Example
+
+    @Before
+	public void openGmail()
+	{
+	 System.out.println("Open Gmail");
+	}
+	
+
+	@Test
+	public void verifyLoginSuccessTest()
+	{
+		System.out.println("Login Test Case is Successful");
+	}
+	
+	@After
+	public void closeGmail()
+	{
+	 System.out.println("Close Gmail");
+	}
+	
+	
+	
+In the above example, Junit will run the precondition first and then the actual test and then the post condition. Here the control of execution will be 
+based on the annotaions provided.
+
+
+@BeforeClass is an annotaion which will execute the precondition only once before the start of the one test only. And not in the beginning of each 
+and every test.
+@AfterClass  is an annotation which will execute the postcondition only once after completing all the tests and not at the end of each and every tests end.
+
+Annotations @BeforeClass and @AfterClass will have only the static methods.
+
+Example
+   @BeforeClass
+	public static void openGmail()
+	{
+	 System.out.println("Open Gmail");
+	}
+	
+
+	@Test
+	public void verifyLoginSuccessTest()
+	{
+		System.out.println("Login Test Case is Successful");
+	}
+	
+	@Test
+	public void verifyLogoutSuccessTest()
+	{
+		System.out.println("Logout Test Case is Successful");
+	}
+	
+	
+	@AfterClass
+	public static void closeGmail()
+	{
+	 System.out.println("Close Gmail");
+	}
+	
+
+Test Suite is nothing but the overall tests in that project. A project can contain multiple classes and each and every class will 
+contain n number of tests. This is called the test suite.
+@RunWith, @SuiteClasses are the annotaions in TestSuite which controls the execution.
+
+Test Suite Creation -> Right click on the package where our test classes available --> New-->Other-->Junit Test Suite
+
+Assert is a inbuild class in JUNIT which is used to perform verification and validation. Assert.assertEquals(Var1, Var2) is a method in
+ Assert class which is used to perform verification,
+
+Assert.assertTrue(Condition) is a method of assert class which accepts the arguments only when it is true.
+
+
+Drawback of Assert ---> It will stop the execution at a point when there is a test case failure and it will not proceed the execution of other test case 
+statement within that @Test unit.
+
+If there are two @Tests in a class, and there is an assertion error in a first @Tests then the exectution of the second @Tests will not be stopped.
+Because execution of @Tests will be independent. But if there is an assertion error in the first @Test and there are other program statements in the first
+@Test after the assert statement means then they will not be executed since the assertion error will stop the execution of other program statements in the 
+first @Test. To overcome this use the Try Catch block.
+
+Parameterization in JUNIT.
+
+Execution flow will start from the annotation @Parameters and not from @Test for parameterization in Junit.
+
+1. Declaring @RunWith(Parameterized.class)
+2. Declaring Global variable.
+3. Declaring the Constructor for the class.
+4. Mapping the constructor local variable to the global variable.
+5. Writing the actual test using the JUNIT annotation @Test
+6. Declaring @Parameter under which we will store the data
+
+
+Error Collector in Junit
+
+ErrorCollector is a inbuild class in JUNIT which is used to perform verfication and validation and execute the program end to end even when
+ there is a failure testcase simulataneously failing the test cases which got failed.
+
+Declaration of Error Collector
+
+@Rule
+public ErrorCollector a=new ErrorCollector();
+
+Parameters that can be used in @Test Annotaion
+
+@Test(expected=ArithmeticException.class - This will fail the test case if there is no arithmetic exception occured in the execution
+@Test(timeout-10000) - This will fail the test case if the execution takes more than 10 seconds
+
+Frameworks
+____________________________________
+
+Framework is nothing but a template or skeleton which is resusable for automation.
+Framework is chosen for its reusability and maintainenace.
+
+Framework should be very user friendly.
+Framework should be platform independent for all the applications. It should be usable by all the applications.
+Framework should be a readymade architecture.
+Should get the requirement from functional team before creating a framework.
+Framework should have the proper memory management mechanism.
+Framework should have the proper exception handling mechanism.
+Framework should have the proper naming conventions.
+Framework should not contain any hardcoded datas inside.
+Framework should support for multi tier architecture.
+Framework should implement proper library management.
+There should be a separate development environment and execution environment in a framework
+Go for a relative path instead of absolute path for storing the properties files and test data sheets while developing a framework. So that everyone can run the
+developed framework without any dependencies. -- Command for this is  --> System.getProperty("user.dir")
+
+
+Approaches or Processes in Framework.
+DATADRIVEN APPROACH
+HYBRID APPROACH
+BDD APPROACH
+TDD APPROACH
+INSPRINT APPROACH
+
+DATADRIVEN APPROACH
+*******************
+
+Test data and test cases will be from external file like (XLS, CSV) for the execution which is called Data Driven Framework.
+
+Components which is used in developing Data Driven Framework...-----> JAVA, JUNIT, Webdriver, Locator, Log4j, Maven, Jenkins.
+
+BASE - All the initializations will be stored in this BASE package
+
+UTILS - All the reusable functions are captured and stored in this package.  All the ready to use functions will be stored in the UTILS package.
+
+SUITS - All the test scripts will be stored in the SUITS package.
+
+OUTPUT - After the execution all the reports will be stored in this Output package.
+
+LIBS - All the JARS will be stored in this LIBS package.
+
+
+
+Parameterization Data HardCode Example Program
+@Parameters
+	
+	public static Collection<String[]> getData()
+	{
+		String data[][]=new String[2][2];
+		data[0][0]="Tester";
+		data[0][1]="test";
+		data[1][0]="Testing";
+		data[1][1]="test";
+		
+		return Arrays.asList(data);
+	}
+
+
+
+ANT, MAVEN, GRADEN
+
+ANT - Build Integration Tool. Product of Apache. This is used to execute our project from Command prompt.
+
+Prepare the build.xml file for the project which should be executed via ant. Steps to prepare the build.xml file as below.
+ Change the project name in the tag - project name
+ Give the local folder path for the property ws.jars -- <property name="ws.jars" value="C:\Users\karthikeyan\Desktop\Automation Learning\Part 2\lib"/>
+ Give the local folder path for the property report directory -- <property name="test.reportsDir" value="C:\Users\karthikeyan\eclipse-workspace\NewWorkspace\AntExecution\Report"/>
+ Give the class name which you want to execute in the tag include name -- <include name="TestSuite.class" />
+
+clean - used to clean the existing class file inside the project folder.
+
+Commands to be used in CMD prompt for running the project in CMD 
+cd project path
+inside project > type ant and enter
+ant clean 
+ant compile
+ant run
+
+
+BDD FRAMEWORK - Behaviour Driven Development Framework
+-------------
+
+Cucumber is a framework which supports the BDD framework.
+To implement Automation in Agile methodology then we should go for the cucumber framework.
+
+Gherkin keywords are used to define the scenarios in the Cucumber framework.
+Ex for  Gherkin keywords - Given, When, Then, And
+
+In Cucumber framework, pass the input data using feature file
+
+Cucumber Strucutre
+StepDefinition - Contains the java file. Scripts or programs for the test scenarios will be in the java file
+Feature - Contains feature file. Feature files contain the test scenarios and test datas.
+TestRunner - Contains the runner file.
+Configurations - Contains the properties file and the Object repo file.
+
+Pretty is a plugin in cucumber which is used to print the execution output in the console.
+
+DataTable in cucumber is used to pass the testdata in the scenario step itself in the feature file.
+
+Background keyword - whatever step given under the keyword background will be considered as the precondition which will be executed before every scenario
+
+
+@Before is a annotation in Cucumber where we can give the preconditons for our test. It will execute before the execution of each and every scenario
+@After is a annotaion in Cucumber where we can give the postconditions for our test. It will execute after the execution of each and every scenario
+
+
+Difference between Background and @Before
+Background will execute before the scenarios for the feature file in which the Background is specified.
+@Before will execute befere the scenarios in all the feature files.
+
+@Before will run first and then only Background will run. @Before is the superior one when compared to Background.
+
+
+To exclude a particular scenario for execution, use tilde (~) symbol before that tag while calling that tag in the runner file.
+Example
+@CucumberOptions(features="Feature",glue= {"StepDefinition"},tags= {"~@DataTable"}, plugin= { "pretty", "html:target/cucumber-reports.html"} )
+
+To execute the precondition only for particular scenario alone then use @Before("Scenario Tag Name") 
+@Before("@Sanity1, @Sanity3") - This will execute the precondition only for the scenarios @Sanity1 and @Sanity3.
+
+To execute the postcondition only for particular scenario alone then use @After("Scenario Tag Name")
+@After("@Sanity1,@Sanity3") - This will execute the postcondition only for the scenario @Sanity1 and @Sanity3.
+
+
+
+
+******************Inheritance
+
+
+
+
+
+*******************Polymorphism
+One object behaving in many forms.
+Two types of Polymorphism - Compile time polymorphism, Runtime Polymorphism
+Method Overloading is an example for Compile time polymorphism
+Method Overriding is an example for Runtime polymorphism
+
+Polymorphism confined onyl to methods.
+
+__________________________________________________________________________________________________________________________________________________________________
+
+Wrapper Class - Integer, Character, Boolean and Float are the wrapper classes. 
+Character is a wrapper class for the data type Char
+Float is a wrapper class for the data type Float and Double
+Boolean is a wrapper class for the data type boolean
+Integer is a wrapper class for the data type int
+
+___________________________________________________________________________________________________________________________________________________________________
+
+Getter Setter
+
+
+__________________________________________________________________________________________________________________________________________________________________
+
+Process Automation
+Below are the processes which comes under process automation.
+1. Library Management - Done by Maven
+2. Repository Management - SVN, Git/BitBucket
+3. Creating an execution management - Done by Jenkins
+4. Scheduling the time for the execution in jenkins
+5. Publishing the report via email - Done by Report Servers
+
+Following the above processes is called the Continuous Integration
+
+Jenkins Automation build trigger after each commit for automation pack
+Configure -> Build Triggers -> POLL SCM
+In Schedule Text Box, just type the command *****
+
+
+Jenkins build trigger using Scheduler
+Configure -> Build Triggers -> Build Periodically
+
+In Schedule Text Box, just type the command in the CRON pattern  *****
+First * -> Minute
+Second * -> Hour
+Third * -> Week
+Fourth * -> Month
+Fifth * -> Year
+
+To run the pack at 10.45 am daily schedule the time as below
+45 10 ***

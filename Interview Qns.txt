@@ -1,0 +1,66 @@
+JAVA QNS
+
+What is the best practice in Java ?
+What is Instance Variable ? Non Static global variable is called instance variable
+When will use a static and non static variable ?  Non Static Variable allocates 
+What is the difference between the Default and Protected ?  Within the project is Default ... Within the project and sub class is Protected
+What is the difference between String Buffer and String Builder ?
+What are the classes available inside Log4j ?
+Write a program to print the count of the repeatable letters are there in the sentence WelcomeToIndia ?
+Write a program to print the vowels available in the sentence WelcomeToIndia ?
+What is a purpose of using This keyword ?
+What is meant by super keyword?
+Write an algorithm for FOR loop ?
+What are the types of Constructors ?
+What are the types of Polymorphism ? Compile Time Polymorphism and Run time Polymorphism 
+How will you create an object for Abstract Class ? We cannot create an object for abstract class.
+How will you read a data from text file ?
+List out the Unchecked exceptions ?
+What is the difference between Final, Finally and Finalize?
+What is wrapper class ? Assigning object for a datatypes is called wrapper class.
+What is the difference between HashMap and HashTable ? 
+What is the difference between Linked List and Array List ?
+How will you store a data in the Set ? Using Add method we will store the data in the Set
+What is the difference between throwable and throw ?
+How will you print the data in the Descending order ?
+What is meant by multi inheritance ?
+What is the difference between Pass by Value and Pass by Reference ?
+What is meant by Singleton Object ?
+What is Object Cloning ?
+What is Getter and Setter ?
+What is meant by Exception Propagation ?
+How will you execute a JAR file ?
+Write a program to print Only even numbers between 0 and 20
+What is the difference between Sleep and Wait ?
+How will you handle the property file ?
+How will you print the unique values from Array without using Collections ?
+What is the difference between File Reader and File Input Stream ?
+What are the new features available in Java 1.8 ?
+What is the difference between For and For Each ?
+What is the difference between Break and Continue ?
+What is the difference between i++ and ++i ?
+
+WebDriver
+How Will you identify a webelement whose attribute is dynamically changing ?
+What is meant by Siblings ?
+What is Anchestors ?
+What is meant by following siblings and what is meant by preceding sibiling
+What are String Functions ?
+What are node set functions ?
+What is the best locator to identify the Web Element ?  ID is the best locator
+How will you identify a label ?
+What is the purpose of OR operator  ? Globalisation.. Using the same variable when automating for multiple countries 
+What is the syntax for identifying the element through ID?
+What is meant by absolute CSS ?
+How will you identify the element through DOM ?
+How will you pass the System Date in the Date picker without using the external files?
+What is meant by simple date format ?
+What is the difference between Date and Calendar ?
+What is desired capabilities in WebDriver ?
+What is meant by listeners in Webdriver?
+How will you handle dynamic webtable ?
+How will you resize the browser window ?
+What is WebElement ?
+List some methods in WebDriver that uses function ovrloading?
+How will you verify the application is completely loaded ?
+What is the difference between Implicit Wait and Explicit Wait ?
